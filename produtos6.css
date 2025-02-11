@@ -1,0 +1,107 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0; /*20px p/cima e baixo e 0 p/dir e esq*/
+}
+
+
+/*POSITION: 
+	STATIC: Posicionamento padrão de todo elemento no HTML é estático. É posicionado alinhado pelo canto superior esquerdo no corpo do documento. Não sendo possível alterar sua posição.
+	RELATIVE: posição que é relativa àquela posição inicial. Pode aplicar top, left e ele altera a posição com referência a posição inicial.
+	ABSOLUTE: é um posicionamento absoluto em relação a outra coisa, por exemplo, em relação à página toda. Ele irá ignorar estes elementos e será posicionado a partir do canto esquerdo superior do documento, podendo até mesmo sobrepor a eles. Aí pode utilizar as configurações de top e left.
+*/	
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto; /*margem para cima e para baixo são 0 e esquerda e direita são auto*/
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px; /*aumentar o espaçamento entre os itens topo, direita, baixo e esquerda*/
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover { /*comportamento qdo o mouse está sobre o elemento*/
+	color: #C78C19;
+	text-decoration: underline;
+} 
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0; /*50px cima e baixo e 0 para os lados*/
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+/*	background: #CCCCCC;*/
+	margin: 0 1.5%;  /*0 para cima e baixo e 1.5% para os lados*/
+	padding: 30px 20px; /*30px cima e baixo e 20px para os lados*/
+	box-sizing: border-box; /*considera o espaçamento interno como parte do width que é a largura fixa, assim não desconfigura quando usa o padding com px junto com %*/
+	
+	/*Trabalhando com bordas*/
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid; /*solid dashed dotted*/
+	/*border: 2px solid #000000; pode usar essa forma simplificada*/
+	/*border-top-width: 10px;*/
+
+	border-radius: 10px;
+
+}
+
+
+/*Algumas pseudo-classes CSS
+	hover: quando o usuário passa o cursor sobre o elemento
+	active: quando um elemento está sendo ativado pelo usuário
+*/
+
+.produtos li:hover {
+	border-color: #C78C19;
+	/*font-size: 40px;  - nada acontece pq os outros estilos estão definidos*/
+
+} 
+
+.produtos li:active { /*Comportamento de qdo o mouse está sendo clicado, é o active*/
+	border-color: #088C19 ;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;	
+} 
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao{
+	font-size: 18px;
+	
+}
+
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0; /*10px cima, 0 baixo e 0 lados (= margin-top: 10px)*/
+}
+
+

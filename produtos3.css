@@ -1,0 +1,66 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0; /*20px p/cima e baixo e 0 p/dir e esq*/
+}
+
+
+/*POSITION: 
+	STATIC: Posicionamento padrão de todo elemento no HTML é estático. É posicionado alinhado pelo canto superior esquerdo no corpo do documento. Não sendo possível alterar sua posição.
+	RELATIVE: posição que é relativa àquela posição inicial. Pode aplicar top, left e ele altera a posição com referência a posição inicial.
+	ABSOLUTE: é um posicionamento absoluto em relação a outra coisa, por exemplo, em relação à página toda. Ele irá ignorar estes elementos e será posicionado a partir do canto esquerdo superior do documento, podendo até mesmo sobrepor a eles. Aí pode utilizar as configurações de top e left.
+*/	
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto; /*margem para cima e para baixo são 0 e esquerda e direita são auto*/
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px; /*aumentar o espaçamento entre os itens topo, direita, baixo e esquerda*/
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0; /*50px cima e baixo e 0 para os lados*/
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao{
+	font-size: 18px;
+	
+}
+
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+}
+

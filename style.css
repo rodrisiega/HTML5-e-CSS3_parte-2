@@ -1,0 +1,67 @@
+body{
+	
+}
+
+#banner{
+	width:100% ;	
+}
+
+.principal{
+	background: #CCCCCC;
+	padding: 30px;  /*espaçamento interno*/
+}
+
+.titulo-principal{
+	padding-left: 20px;	
+}
+
+.titulo-centralizado{
+	text-align: center;
+}
+
+p {
+  	text-align: center;
+}
+
+#missao{  /*identificadores iniciam com #nome_identificador*/
+	font-size: 20px;
+}
+
+
+em strong{
+	color: red;
+}
+
+
+.itens{  /*classes iniciam com .nome_classe*/
+	font-style: italic ;
+}
+
+.beneficios{
+	background: #FFFFFF;
+ 	padding: 20px; /*espaçamento interno*/
+}
+
+h2{
+	text-align: center;
+}
+
+/* A tag li ocupa 100% da largura da pág e quebra linha depois(indiferente do tamanho do conteúdo) 
+	-Esse comportamento de uma tag e chamado de "block"
+   Imagens não bloqueiam o conteúdo, pode ter outra coisa na lateral dela
+	-Isso é considerado inline e não deixa alterar o espaçamento externo e interno.
+   Terceiro tipo: é inline e block ao mesmo tempo. 
+   	-Bloqueia uma largura, mas essa largura é fixa (eu que dou o tamanho). 
+   	 E deixa também mexer na largura e nos espaçamentos interno e externo.		
+    	*/
+
+ul{
+	display: inline-block; /*ocupa só o tamanho do conteúdo mas permite mexer na largura*/
+	vertical-align: top ;	/*todos os elementos são alinhados pela linha de baixo, aqui alinhamos pela linha de cima*/
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagembeneficios{
+	width: 50%;
+}
